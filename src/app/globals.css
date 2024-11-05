@@ -1,12 +1,14 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --black: #000000;
+  --white: #FFFFFF;
+  --green: #005844;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --black: #FFFFFF;
+    --white: #000000;
+    --green: yellow;
   }
 }
 
@@ -17,8 +19,8 @@ body {
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  color: var(--black);
+  background: var(--white);
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -39,4 +41,9 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+
+h1 {
+  margin-bottom: 30px;
 }

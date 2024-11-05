@@ -1,0 +1,91 @@
+.btn {
+    padding: 5px 28px;
+    border-radius: 8px;
+    border: solid 1px var(--black);
+    background: var(--black);
+    color: var(--white);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 120px;
+    min-height: 46px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all ease-in-out 0.5s;
+}
+
+.btnPrimary {
+    background: #005844;
+    border: solid 1px #005844;
+    color: #FFFFFF;
+}
+
+.btn-yellow {
+    background: var(--yellow);
+    border: solid 1px var(--yellow);
+    color: var(--white);
+}
+
+.btn-white {
+    background: var(--white);
+    border-color: var(--white);
+    color: var(--black);
+}
+
+.btn-outline-primary {
+    background: none;
+    border-color: var(--black);
+    color: var(--black);
+}
+
+.btn-outline-yellow {
+    background: none;
+    border-color: var(--yellow);
+    color: var(--yellow);
+}
+
+.btn-outline-white {
+    background: none;
+    border-color: var(--white);
+    color: var(--white);
+}
+
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+    .btnPrimary:hover {
+        background: #FFFFFF;
+        border-color: #005844;
+        color: #005844;
+    }
+
+    .btn-yellow:hover {
+        background: var(--white);
+        color: var(--yellow);
+    }
+
+    .btn-white:hover {
+        background: var(--black);
+        color: var(--white);
+    }
+
+    .btn-outline-primary:hover {
+        background: var(--black);
+        border-color: var(--black);
+        color: var(--white);
+    }
+
+    .btn-outline-yellow:hover {
+        background: var(--yellow);
+        border-color: var(--yellow);
+        color: var(--white);
+    }
+
+    .btn-outline-white:hover {
+        background: var(--white);
+        border-color: var(--white);
+        color: var(--black);
+    }
+}
